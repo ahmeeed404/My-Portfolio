@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/My-https://github.com/ahmeeed404/My-Portfolio.git/' // ⚠️ Set to your repo name for GitHub Pages
+  base: '/My-Portfolio/' // ⚠️ Correct repository name for GitHub Pages
 })

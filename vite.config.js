@@ -7,6 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()
-  ],
-  base: '/My-Portfolio/' // ⚠️ Correct repository name for GitHub Pages
+  ]
 })

@@ -10,7 +10,7 @@ import Footer from './components/footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#050816] text-slate-200">
+    <div className="min-h-screen">
       <Navbar />
       <main>
         <Hero />

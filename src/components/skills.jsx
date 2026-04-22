@@ -1,26 +1,47 @@
 import { useEffect, useRef, useState } from 'react'
+// import icons 
+import { FaReact } from "react-icons/fa6";
+import { BsJavascript } from "react-icons/bs";
+import { BsTypescript } from "react-icons/bs";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io5";
+import { GiElephant } from "react-icons/gi";
+import { FaLaravel } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiGnubash } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+
+
 
 
 const skills = [
   // Frontend
-  { name: 'React', icon: '⚛️', category: 'Frontend', level: 90 },
-  { name: 'JavaScript', icon: '🟨', category: 'Frontend', level: 70 },
-  { name: 'TypeScript', icon: '🔷', category: 'Frontend', level: 35 },
-  { name: 'HTML & CSS', icon: '🎨', category: 'Frontend', level: 92 },
-  { name: 'Tailwind CSS', icon: '💨', category: 'Frontend', level: 85 },
+  { name: 'React', icon: <FaReact className="text-[#61DAFB]" />, category: 'Frontend' },
+  { name: 'JavaScript', icon: <BsJavascript className="text-[#F7DF1E]" />, category: 'Frontend' },
+  { name: 'TypeScript', icon: <BsTypescript className="text-[#3178C6]" />, category: 'Frontend' },
+  { name: 'HTML', icon: <FaHtml5 className="text-[#E34F26]" />, category: 'Frontend' },
+  { name: 'CSS', icon: <FaCss3Alt className="text-[#1572B6]" />, category: 'Frontend' },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06B6D4]" />, category: 'Frontend' },
 
   // Backend
-  { name: 'Node.js', icon: '🟢', category: 'Backend', level: 82 },
-  { name: 'PHP', icon: '🐘', category: 'Backend', level: 85 },
-  { name: 'Laravel', icon: '🔴', category: 'Backend', level: 80 },
-  { name: 'Java', icon: '☕', category: 'Backend', level: 30 },
-  { name: 'Python', icon: '🐍', category: 'Backend', level: 25 },
-  { name: 'MongoDB', icon: '🍃', category: 'Backend', level: 55 },
-  { name: 'MySql', icon: '🗄️', category: 'Backend', level: 65 },
+  { name: 'Node.js', icon: <IoLogoNodejs className="text-[#339933]" />, category: 'Backend' },
+  { name: 'PHP', icon: <GiElephant className="text-[#777BB4]" />, category: 'Backend' },
+  { name: 'Laravel', icon: <FaLaravel className="text-[#FF2D20]" />, category: 'Backend' },
+  { name: 'Java', icon: <FaJava className="text-[#ED8B00]" />, category: 'Backend' },
+  { name: 'Python', icon: <FaPython className="text-[#3776AB]" />, category: 'Backend' },
+  { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248]" />, category: 'Backend' },
+  { name: 'MySql', icon: <GrMysql className="text-[#4479A1]" />, category: 'Backend' },
 
   // Tools
-  { name: 'Git & GitHub', icon: '🐙', category: 'Tools', level: 88 },
-  { name: 'VS Code', icon: '💻', category: 'Tools', level: 95 },
+  { name: 'Git Bash', icon: <SiGnubash className="text-[#4EAA25]" />, category: 'Tools' },
+  { name: 'GitHub', icon: <FaGithub className="text-[#ffffff]" />, category: 'Tools' },
+  { name: 'VS Code', icon: <VscVscode className="text-[#007ACC]" />, category: 'Tools' },
 ]
 
 const categories = ['All', 'Frontend', 'Backend', 'Tools']
@@ -84,15 +105,15 @@ export default function Skills() {
               <div className="text-3xl mb-3">{skill.icon}</div>
               <div className="text-white font-semibold text-sm mb-3">{skill.name}</div>
               {/* Progress bar */}
-              <div className="h-1.5 bg-slate-800 rounded-full overflow-hidden">
+              {/* <div className="h-1.5 bg-slate-800 rounded-full overflow-hidden">
                 <div
                   className={`h-full rounded-full bg-gradient-to-r ${colors[skill.category]} transition-all duration-1000`}
                   style={{ width: visible ? `${skill.level}%` : '0%', transitionDelay: `${i * 60 + 300}ms` }}
                 />
-              </div>
-              <div className="text-right mt-1">
+              </div> */}
+              {/* <div className="text-right mt-1">
                 <span className="text-slate-500 text-xs font-mono">{skill.level}%</span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -28,13 +28,13 @@ const projects = [
     tags: ['React', 'API Integration', 'Mobile Responsive'],
     link: 'https://github.com/ahmeeed404/IMOVIE-APP'
   },
-  {
-    title: 'TodoList',
-    desc: 'A super clean and efficient task management application with a focus on simplicity and user experience.',
-    images: [todo1],
-    tags: ['React', 'productivity', 'Clean UI'],
-    link: 'https://github.com/ahmeeed404/todo_list'
-  },
+  // {
+  //   title: 'TodoList',
+  //   desc: 'A super clean and efficient task management application with a focus on simplicity and user experience.',
+  //   images: [todo1],
+  //   tags: ['React', 'productivity', 'Clean UI'],
+  //   link: 'https://github.com/ahmeeed404/todo_list'
+  // },
   {
     title: 'Final Project',
     desc: 'A robust React-based application demonstrating advanced UI patterns and sophisticated state management.',

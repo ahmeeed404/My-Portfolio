@@ -21,7 +21,7 @@ const contactLinks = [
     icon: '💼',
     label: 'LinkedIn',
     value: 'Ahmed Achoukhan',
-    href: 'https://www.linkedin.com/in/ahmed-achoukhan',
+    href: 'https://www.linkedin.com/in/ahmed-achoukhan-b8a413180/',
     color: 'from-blue-600 to-blue-400',
     hoverBorder: 'hover:border-blue-600/50',
   },
